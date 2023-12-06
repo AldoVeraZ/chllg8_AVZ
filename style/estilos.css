@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+/* Elimina los estilos de base del navegador (agent stylesheet) para trabajar de forma más uniforme y precisa: */
+/* * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+} */

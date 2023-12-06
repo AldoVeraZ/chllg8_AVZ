@@ -10,6 +10,6 @@ function onClick() {
   if (activeFile > 2) {
     activeFile = 0;
   }
-  //   links[0].href = cssFiles[activeFile];
+  links[0].href = cssFiles[activeFile];
   console.log(cssFiles[activeFile]);
 }
