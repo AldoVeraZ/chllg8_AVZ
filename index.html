@@ -19,59 +19,53 @@
       <header>
         <h1>Vení al Gym! 💪🏼</h1>
       </header>
-      <main>
+      <!-- <main> -->
+      <fieldset class="nro1">
+        <legend>🙋‍♂️ Datos personales 👀</legend>
         <form>
-          <fieldset>
-            <legend>🙋‍♂️ Datos personales 👀</legend>
+          <div class="personal-data">
+            <label for="name">Nombre: *</label>
+            <input type="text" id="name" name="name" required /><br />
 
-            <div class="personal-data">
-              <label for="name">Nombre: *</label>
-              <input type="text" id="name" name="name" required /><br />
+            <label for="apellido">Apellido: *</label>
+            <input type="text" id="apellido" name="apellido" required /><br />
 
-              <label for="apellido">Apellido: *</label>
-              <input type="text" id="apellido" name="apellido" required /><br />
+            <label for="documento">Documento: *</label>
+            <input type="text" id="documento" name="documento" required /><br />
 
-              <label for="documento">Documento: *</label>
-              <input
-                type="text"
-                id="documento"
-                name="documento"
-                required
-              /><br />
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select id="nacionalidad" name="nacionalidad" required>
+              <option value="" disabled selected>-- Selecciona --</option>
+              <option value="ch">Chile</option>
+              <option value="ar">Argentina</option>
+              <option value="ig">England</option>
+              <option value="gr">Germany</option>
+              <option value="nw">Norway</option></select
+            ><br />
 
-              <label for="nacionalidad">Nacionalidad:</label>
-              <select id="nacionalidad" name="nacionalidad" required>
-                <option value="" disabled selected>-- Selecciona --</option>
-                <option value="ch">Chile</option>
-                <option value="ar">Argentina</option>
-                <option value="ig">England</option>
-                <option value="gr">Germany</option>
-                <option value="nw">Norway</option></select
-              ><br />
+            <label for="textarea">Contanos un poco de vos...</label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              required
+            ></textarea
+            ><br />
 
-              <label for="textarea">Contanos un poco de vos...</label>
-              <textarea
-                name="textarea"
-                id="textarea"
-                cols="30"
-                rows="10"
-                required
-              ></textarea
-              ><br />
-
-              <label for="gender">Sexo: *</label>
-              <div class="gender-container">
-                <input type="radio" id="f" name="gender" />
-                <label for="f">Femenino</label>
-                <input type="radio" id="m" name="gender" />
-                <label for="m">Masculino</label>
-                <input type="radio" id="o" name="gender" />
-                <label for="o">Otro</label>
-              </div>
+            <label for="gender">Sexo: *</label>
+            <div class="gender-container">
+              <input type="radio" id="f" name="gender" />
+              <label for="f">Femenino</label>
+              <input type="radio" id="m" name="gender" />
+              <label for="m">Masculino</label>
+              <input type="radio" id="o" name="gender" />
+              <label for="o">Otro</label>
             </div>
-          </fieldset>
+          </div>
         </form>
-      </main>
+      </fieldset>
+      <!-- </main> -->
       <div class="pelotas-container">
         <div class="pelota"></div>
         <div class="pelota"></div>
@@ -87,9 +81,9 @@
         <!-- Puedes agregar más elementos según sea necesario -->
       </div>
 
-      <section class="main2">
-        <fieldset>
-          <legend>📱 Datos de Contacto ✉</legend>
+      <fieldset class="nro2">
+        <legend>📱 Datos de Contacto ✉</legend>
+        <form>
           <div class="data-contact">
             <label for="phone">Teléfono: </label>
             <input
@@ -109,11 +103,12 @@
               placeholder="Ej: mail@gmail.com"
             />
           </div>
-        </fieldset>
-      </section>
-      <section class="main3">
-        <fieldset>
-          <legend>🚴🏻 Actividades 🤸‍♀️</legend>
+        </form>
+      </fieldset>
+
+      <fieldset class="nro3">
+        <legend>🚴🏻 Actividades 🤸‍♀️</legend>
+        <form>
           <p>Por favor, indicá cuáles actividades te interesan.</p>
           <label for="palermo-title">Sede Palermo:</label><br /><br />
           <div class="sport-palermo">
@@ -138,19 +133,23 @@
             <input type="checkbox" id="voley" name="voley" />
             <label for="voley">Voley</label>
           </div>
-        </fieldset>
-      </section>
+        </form>
+      </fieldset>
 
-      <section class="main4">
-        <input type="checkbox" id="accept" />
-        <label for="accept">Acepto las condiciones *</label><br />
-        <input type="checkbox" id="news" />
-        <label for="news">Deseo recibir novedades</label><br /><br />
-        <label for="camp">*: campo obligatorio.</label><br /><br />
+      <section class="nor4">
+        <form>
+          <input type="checkbox" id="accept" />
+          <label for="accept">Acepto las condiciones *</label><br />
+          <input type="checkbox" id="news" />
+          <label for="news">Deseo recibir novedades</label><br /><br />
+          <label for="camp">*: campo obligatorio.</label><br /><br />
 
-        <button type="submit" name="signup">Iniciar afiliación</button>
-        <button type="reset" name="reset">Restablecer</button>
+          <button type="submit" name="signup">Iniciar afiliación</button>
+          <button type="reset" name="reset">Restablecer</button>
+        </form>
       </section>
     </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

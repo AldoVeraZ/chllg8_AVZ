@@ -13,10 +13,10 @@ body {
   justify-content: center;
 }
 
-main,
-.main2,
-.main3,
-.main4 {
+.nro1,
+.nro2,
+.nro3,
+.nor4 {
   grid-column: 2; /* Centrar el contenido en la segunda columna */
   background-color: #a6c1b9;
 }
@@ -37,6 +37,13 @@ h1 {
 
 fieldset {
   border: none;
+}
+
+legend {
+  padding: 3px;
+  background-color: #4d6d63;
+  border-radius: 2px;
+  color: #fff;
 }
 
 .pelotas-container {
@@ -60,4 +67,26 @@ fieldset {
   align-items: center;
   justify-content: center;
   font-weight: bold;
+}
+
+.personal-data {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto; /* Centra el input horizontalmente */
 }
