@@ -47,7 +47,6 @@
             <textarea
               name="textarea"
               id="textarea"
-              cols="30"
               rows="10"
               required
             ></textarea
@@ -84,7 +83,7 @@
       <fieldset class="nro2">
         <legend>📱 Datos de Contacto ✉</legend>
         <form>
-          <div class="data-contact">
+          <div class="personal-data">
             <label for="phone">Teléfono: </label>
             <input
               type="text"
@@ -110,8 +109,9 @@
         <legend>🚴🏻 Actividades 🤸‍♀️</legend>
         <form>
           <p>Por favor, indicá cuáles actividades te interesan.</p>
-          <label for="palermo-title">Sede Palermo:</label><br /><br />
-          <div class="sport-palermo">
+          <label for="palermo-title" class="title">Sede Palermo:</label
+          ><br /><br />
+          <div class="sport">
             <input type="checkbox" id="bas" name="bas" />
             <label for="bas">Básquet</label>
             <input type="checkbox" id="box" name="box" />
@@ -122,8 +122,9 @@
             <label for="tenis">Tenis</label>
           </div>
           <br />
-          <label for="rosario-title">Sede Rosario:</label><br /><br />
-          <div class="sport-rosario">
+          <label for="rosario-title" class="title">Sede Rosario:</label
+          ><br /><br />
+          <div class="sport">
             <input type="checkbox" id="bas_rosario" name="bas_rosario" />
             <label for="bas_rosario">Básquet</label>
             <input type="checkbox" id="soc_rosario" name="soc_rosario" />
@@ -136,7 +137,7 @@
         </form>
       </fieldset>
 
-      <section class="nor4">
+      <section class="nor4 sport">
         <form>
           <input type="checkbox" id="accept" />
           <label for="accept">Acepto las condiciones *</label><br />
