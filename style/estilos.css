@@ -18,7 +18,7 @@ body {
 .nro2,
 .nro3 {
   grid-column: 2; /* Centrar el contenido en la segunda columna */
-  background-color: #a6c1b9;
+  background-color: #d6e2de;
 }
 
 header {
@@ -132,7 +132,7 @@ p {
   margin-left: 8px;
 }
 
-.sport label {
+.hlabel {
   grid-row: 1;
   margin-right: 5px;
   margin-top: 0;
@@ -142,7 +142,7 @@ p {
   margin: 0;
 }
 
-.sport input[type="checkbox"] {
+.hinput {
   margin-right: 0px; /* Ajusta el margen derecho de los checkboxes */
   margin-top: 0;
   padding-top: 0;
@@ -157,4 +157,64 @@ p {
 .nor4 {
   color: #fff;
   grid-column: 2;
+  display: grid;
+}
+
+.pico {
+  display: grid;
+  grid-template-columns: 2rem 10fr;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+
+  column-gap: 0;
+  row-gap: 0;
+}
+
+.inpt {
+  grid-row: 1;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.lb {
+  grid-row: 1;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.inp2 {
+  grid-row: 2;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.lb2 {
+  grid-row: 2;
+  justify-content: flex-start;
+  display: flex;
+}
+.msg {
+  grid-row: 3;
+  display: grid;
+  grid-column: span 2;
+  justify-content: flex-start;
+}
+
+.btn {
+  margin-top: 0;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-row: 4;
+  grid-column: 2;
+}
+
+.btn button {
+  margin-right: 50px;
+  margin-top: 20px;
+  background-color: #2b3d37;
+  color: #9abbb7;
+  border-radius: 4px;
+  padding: 8px;
 }

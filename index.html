@@ -105,6 +105,21 @@
         </form>
       </fieldset>
 
+      <div class="pelotas-container">
+        <div class="pelota"></div>
+        <div class="pelota"></div>
+        <div class="pelota"></div>
+        <div class="pelota"></div>
+        <div class="pelota"></div>
+        <div class="pelota"></div>
+        <div class="pelota"></div>
+        <div class="pelota"></div>
+        <div class="pelota"></div>
+        <div class="pelota"></div>
+        <div class="pelota"></div>
+        <!-- Puedes agregar más elementos según sea necesario -->
+      </div>
+
       <fieldset class="nro3">
         <legend>🚴🏻 Actividades 🤸‍♀️</legend>
         <form>
@@ -112,41 +127,57 @@
           <label for="palermo-title" class="title">Sede Palermo:</label
           ><br /><br />
           <div class="sport">
-            <input type="checkbox" id="bas" name="bas" />
-            <label for="bas">Básquet</label>
-            <input type="checkbox" id="box" name="box" />
-            <label for="box">Boxeo</label>
-            <input type="checkbox" id="soccer" name="soccer" />
-            <label for="soccer">Fútbol</label>
-            <input type="checkbox" id="tenis" name="tenis" />
-            <label for="tenis">Tenis</label>
+            <input type="checkbox" class="hinput" id="bas" name="bas" />
+            <label for="bas" class="hlabel">Básquet</label>
+            <input type="checkbox" class="hinput" id="box" name="box" />
+            <label for="box" class="hlabel">Boxeo</label>
+            <input type="checkbox" class="hinput" id="soccer" name="soccer" />
+            <label for="soccer" class="hlabel">Fútbol</label>
+            <input type="checkbox" class="hinput" id="tenis" name="tenis" />
+            <label for="tenis" class="hlabel">Tenis</label>
           </div>
           <br />
           <label for="rosario-title" class="title">Sede Rosario:</label
           ><br /><br />
           <div class="sport">
-            <input type="checkbox" id="bas_rosario" name="bas_rosario" />
-            <label for="bas_rosario">Básquet</label>
-            <input type="checkbox" id="soc_rosario" name="soc_rosario" />
-            <label for="soc_rosario">Fútbol</label>
-            <input type="checkbox" id="rugby" name="rugby" />
-            <label for="rugby">Rugby</label>
-            <input type="checkbox" id="voley" name="voley" />
-            <label for="voley">Voley</label>
+            <input
+              type="checkbox"
+              class="hinput"
+              id="bas_rosario"
+              name="bas_rosario"
+            />
+            <label for="bas_rosario" class="hlabel">Básquet</label>
+            <input
+              type="checkbox"
+              class="hinput"
+              id="soc_rosario"
+              name="soc_rosario"
+            />
+            <label for="soc_rosario" class="hlabel">Fútbol</label>
+            <input type="checkbox" class="hinput" id="rugby" name="rugby" />
+            <label for="rugby" class="hlabel">Rugby</label>
+            <input type="checkbox" class="hinput" id="voley" name="voley" />
+            <label for="voley" class="hlabel">Voley</label>
           </div>
         </form>
       </fieldset>
 
-      <section class="nor4 sport">
+      <section class="nor4">
         <form>
-          <input type="checkbox" id="accept" />
-          <label for="accept">Acepto las condiciones *</label><br />
-          <input type="checkbox" id="news" />
-          <label for="news">Deseo recibir novedades</label><br /><br />
-          <label for="camp">*: campo obligatorio.</label><br /><br />
-
-          <button type="submit" name="signup">Iniciar afiliación</button>
-          <button type="reset" name="reset">Restablecer</button>
+          <div class="pico">
+            <input type="checkbox" class="inpt" id="accept" />
+            <label for="accept" class="lb">Acepto las condiciones *</label
+            ><br />
+            <input type="checkbox" class="inp2" id="news" />
+            <label for="news" class="lb2">Deseo recibir novedades</label
+            ><br /><br />
+            <label for="camp" class="msg">*: campo obligatorio.</label
+            ><br /><br />
+            <div class="btn">
+              <button type="submit" name="signup">Iniciar afiliación</button>
+              <button type="reset" name="reset">Restablecer</button>
+            </div>
+          </div>
         </form>
       </section>
     </div>
