@@ -41,10 +41,10 @@ header {
   content: "";
   position: absolute;
   top: 127px;
-  left: 69rem;
+  left: 71rem;
 
   border-top: 20px solid #1f2023;
-  border-left: 100px solid #4d6d63;
+  border-left: 25px solid #4d6d63;
 }
 
 h1 {
