@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/estilos.css" />
+    <!-- <link rel="stylesheet" href="./style/estilos.css" /> -->
+    <link rel="stylesheet" href="./style/estilos-peliculas.css" />
     <title>Document</title>
   </head>
   <body>
     <button class="change" type="button" onclick="onClick()">Presionar</button>
     <div class="container">
       <header>
-        <h1>Vení al Gym! 💪🏼</h1>
+        <h1 class="logo">Vení al <span>Gym!</span> 💪🏼</h1>
       </header>
+
       <!-- <main> -->
       <fieldset class="nro1">
         <legend>🙋‍♂️ Datos personales 👀</legend>
@@ -36,12 +38,15 @@
               <option value="nw">Norway</option></select
             ><br />
 
-            <label for="textarea">Contanos un poco de vos...</label>
+            <label for="textarea" class="pichula"
+              >Contanos un poco de vos...</label
+            >
             <textarea
               name="textarea"
               id="textarea"
               rows="10"
               required
+              class="block"
             ></textarea
             ><br />
 
@@ -94,6 +99,8 @@
               required
               placeholder="Ej: mail@gmail.com"
             />
+            <div id="parrafo-container"></div>
+            <div id="imagen-container"></div>
           </div>
         </form>
       </fieldset>
@@ -157,7 +164,7 @@
 
       <section class="nor4">
         <form>
-          <div class="pico">
+          <div class="tyc">
             <input type="checkbox" class="inpt" id="accept" />
             <label for="accept" class="lb">Acepto las condiciones *</label
             ><br />

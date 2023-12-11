@@ -8,10 +8,144 @@ body {
   font-family: "Quicksand", sans-serif;
   padding: 0 1.5em;
 }
-
 .container {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+.pelotas-container {
+  display: none;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
+
+.logo span {
+  color: #b70e21;
+}
+
+fieldset {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  background: #222222;
+}
+
+.nro1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  grid-row: 2;
+  grid-column: 2;
+  padding: 3em;
+}
+
+.nro1 label,
+.nro2 label {
+  padding-top: 1em;
+}
+img {
+  margin-bottom: 3rem;
+  padding-top: 5em;
+  width: 80%;
+}
+
+#parrafo-container {
+  text-align: center;
+  margin-top: 2em; /* Ajusta la distancia entre la imagen y el párrafo según tus preferencias */
+}
+
+#parrafo-container p {
+  text-transform: uppercase; /* Convertir el texto a mayúsculas */
+  margin-bottom: 10px; /* Añadir espacio entre el párrafo y otros elementos */
+  white-space: pre-line; /* Mantener saltos de línea en el texto */
+  color: blue;
+  font-weight: bold;
+}
+
+#parrafo-container p span {
+  /* Estilos para el span, como color, tamaño de fuente, etc. */
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.nro2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  grid-row: 2;
+  grid-column: 3;
+  padding: 2em;
+}
+.nro3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  grid-row: 2;
+  grid-column: 4;
+  padding: 3em;
+}
+.nor4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  grid-row: 3;
+  grid-column: 2;
+  justify-content: center;
+  text-align: center;
+  background: #000;
+  grid-column: span 3;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  grid-row: 1;
+  grid-column: 2;
+  text-align: center;
+}
+
+fieldset legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+fieldset label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+fieldset input,
+fieldset textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  border-bottom: 1px solid #d63031;
+  color: #fff;
+}
+
+fieldset section {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: flex;
+  justify-content: center; /* Centra los elementos en el eje horizontal */
+  align-items: center; /* Centra los elementos en el eje vertical */
+  gap: 30px; /* Espacio entre los botones */
+}
+
+.nro1,
+.nro2,
+.nro3 {
+  grid-column: span 1; /* Asegura que cada elemento ocupe solo una columna */
+  text-align: center; /* Centra el texto dentro de los elementos */
+  margin: 0 auto; /* Centra el elemento en la página */
 }
