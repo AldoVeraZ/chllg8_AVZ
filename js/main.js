@@ -11,7 +11,6 @@ function onClick() {
     activeFile = 0;
   }
   links[0].href = cssFiles[activeFile];
-  console.log(cssFiles[activeFile]);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -22,10 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // Cambia el color de fondo del input o textarea cuando se hace clic
       element.style.backgroundColor = "#4D6D63"; // Puedes cambiar el color a tu preferencia
 
-      // Cambia el color de fondo del fieldset asociado al input o textarea
       const fieldset = element.closest("fieldset");
       if (fieldset) {
-        fieldset.style.backgroundColor = "#A6C1B9"; // Puedes cambiar el color a tu preferencia
+        fieldset.style.backgroundColor = "#A6C1B9";
       }
     });
   });
@@ -34,11 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const firstInput = document.querySelector("input");
   if (firstInput) {
     firstInput.focus();
-    // Cambia el color de fondo del primer input y su fieldset al cargar la página
-    firstInput.style.backgroundColor = "#4D6D63"; // Puedes cambiar el color a tu preferencia
+
+    // firstInput.style.backgroundColor = "#4D6D63";
     const firstFieldset = firstInput.closest("fieldset");
     if (firstFieldset) {
-      firstFieldset.style.backgroundColor = "#A6C1B9"; // Puedes cambiar el color a tu preferencia
+      // firstFieldset.style.backgroundColor = "#A6C1B9";
     }
   }
 });

@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #181818;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  padding: 0 1.5em;
+}
