@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="./style/estilos.css" /> -->
     <link rel="stylesheet" href="./style/estilos-peliculas.css" />
+    <!-- <link rel="stylesheet" href="./style/estilos-futuro.css" /> -->
+
     <title>Document</title>
   </head>
   <body>
-    <button class="change" type="button" onclick="onClick()">Presionar</button>
-    <div class="container">
-      <header>
-        <h1 class="logo">Vení al <span>Gym!</span> 💪🏼</h1>
-      </header>
+    <form>
+      <button class="change" type="button" onclick="onClick()">
+        Presionar
+      </button>
+      <div class="container">
+        <header>
+          <h1 class="logo">Vení al <span>Gym!</span> 💪🏼</h1>
+        </header>
 
-      <!-- <main> -->
-      <fieldset class="nro1">
-        <legend>🙋‍♂️ Datos personales 👀</legend>
-        <form>
+        <!-- <main> -->
+        <fieldset class="nro1">
+          <legend>🙋‍♂️ Datos personales 👀</legend>
+
           <div class="personal-data">
             <label for="name">Nombre: *</label>
             <input type="text" id="name" name="name" required /><br />
@@ -50,7 +55,7 @@
             ></textarea
             ><br />
 
-            <label for="gender">Sexo: *</label>
+            <label for="gender" class="gender-lbl">Sexo: *</label>
             <div class="gender-container">
               <input type="radio" id="f" name="gender" />
               <label for="f">Femenino</label>
@@ -60,27 +65,27 @@
               <label for="o">Otro</label>
             </div>
           </div>
-        </form>
-      </fieldset>
-      <!-- </main> -->
-      <div class="pelotas-container">
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <!-- Puedes agregar más elementos según sea necesario -->
-      </div>
+          <!-- </form> -->
+        </fieldset>
+        <!-- </main> -->
+        <div class="pelotas-container">
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <!-- Puedes agregar más elementos según sea necesario -->
+        </div>
 
-      <fieldset class="nro2">
-        <legend>📱 Datos de Contacto ✉</legend>
-        <form>
+        <fieldset class="nro2">
+          <legend>📱 Datos de Contacto ✉</legend>
+          <!-- <form> -->
           <div class="personal-data">
             <label for="phone">Teléfono: </label>
             <input
@@ -102,68 +107,69 @@
             <div id="parrafo-container"></div>
             <div id="imagen-container"></div>
           </div>
-        </form>
-      </fieldset>
+          <!-- </form> -->
+        </fieldset>
 
-      <div class="pelotas-container">
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <div class="pelota"></div>
-        <!-- Puedes agregar más elementos según sea necesario -->
-      </div>
+        <div class="pelotas-container">
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <div class="pelota"></div>
+          <!-- Puedes agregar más elementos según sea necesario -->
+        </div>
 
-      <fieldset class="nro3">
-        <legend>🚴🏻 Actividades 🤸‍♀️</legend>
-        <form>
-          <p>Por favor, indicá cuáles actividades te interesan.</p>
-          <label for="palermo-title" class="title">Sede Palermo:</label
-          ><br /><br />
-          <div class="sport">
-            <input type="checkbox" class="hinput" id="bas" name="bas" />
-            <label for="bas" class="hlabel">Básquet</label>
-            <input type="checkbox" class="hinput" id="box" name="box" />
-            <label for="box" class="hlabel">Boxeo</label>
-            <input type="checkbox" class="hinput" id="soccer" name="soccer" />
-            <label for="soccer" class="hlabel">Fútbol</label>
-            <input type="checkbox" class="hinput" id="tenis" name="tenis" />
-            <label for="tenis" class="hlabel">Tenis</label>
+        <fieldset class="nro3">
+          <legend>🚴🏻 Actividades 🤸‍♀️</legend>
+          <div class="act">
+            <p>Por favor, indicá cuáles actividades te interesan.</p>
+            <label for="palermo-title" class="palermo">Sede Palermo:</label
+            ><br /><br />
+            <div class="sport">
+              <input type="checkbox" class="hinput" id="bas" name="bas" />
+              <label for="bas" class="hlabel">Básquet</label>
+              <input type="checkbox" class="hinput" id="box" name="box" />
+              <label for="box" class="hlabel">Boxeo</label>
+              <input type="checkbox" class="hinput" id="soccer" name="soccer" />
+              <label for="soccer" class="hlabel">Fútbol</label>
+              <input type="checkbox" class="hinput" id="tenis" name="tenis" />
+              <label for="tenis" class="hlabel">Tenis</label>
+            </div>
+            <br />
+            <label for="rosario-title" class="title-rosario"
+              >Sede Rosario:</label
+            ><br /><br />
+            <div class="sport">
+              <input
+                type="checkbox"
+                class="hinput"
+                id="bas_rosario"
+                name="bas_rosario"
+              />
+              <label for="bas_rosario" class="hlabel">Básquet</label>
+              <input
+                type="checkbox"
+                class="hinput"
+                id="soc_rosario"
+                name="soc_rosario"
+              />
+              <label for="soc_rosario" class="hlabel">Fútbol</label>
+              <input type="checkbox" class="hinput" id="rugby" name="rugby" />
+              <label for="rugby" class="hlabel">Rugby</label>
+              <input type="checkbox" class="hinput" id="voley" name="voley" />
+              <label for="voley" class="hlabel">Voley</label>
+            </div>
           </div>
-          <br />
-          <label for="rosario-title" class="title">Sede Rosario:</label
-          ><br /><br />
-          <div class="sport">
-            <input
-              type="checkbox"
-              class="hinput"
-              id="bas_rosario"
-              name="bas_rosario"
-            />
-            <label for="bas_rosario" class="hlabel">Básquet</label>
-            <input
-              type="checkbox"
-              class="hinput"
-              id="soc_rosario"
-              name="soc_rosario"
-            />
-            <label for="soc_rosario" class="hlabel">Fútbol</label>
-            <input type="checkbox" class="hinput" id="rugby" name="rugby" />
-            <label for="rugby" class="hlabel">Rugby</label>
-            <input type="checkbox" class="hinput" id="voley" name="voley" />
-            <label for="voley" class="hlabel">Voley</label>
-          </div>
-        </form>
-      </fieldset>
+        </fieldset>
 
-      <section class="nor4">
-        <form>
+        <section class="nor4">
+          <!-- <form> -->
           <div class="tyc">
             <input type="checkbox" class="inpt" id="accept" />
             <label for="accept" class="lb">Acepto las condiciones *</label
@@ -178,10 +184,9 @@
               <button type="reset" name="reset">Restablecer</button>
             </div>
           </div>
-        </form>
-      </section>
-    </div>
-
+        </section>
+      </div>
+    </form>
     <script src="./js/main.js"></script>
   </body>
 </html>

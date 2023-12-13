@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../androide.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  padding: 0 1.5em;
+}
+
+#imagen-container,
+#parrafo-container {
+  display: none !important;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-row: 1;
+  grid-column: span 2;
+  justify-items: center;
+  color: #52b69a;
+  background-color: #00000099;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 #d9ed92;
+}
+
+.nro1 {
+  grid-row: 2;
+}
+.personal-data {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(auto, auto);
+  margin-top: 20px;
+}
+
+.act {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(auto, auto);
+  margin-top: 1rem;
+}
+.act label {
+  text-align: center;
+}
+
+.sport {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Cambia el número según la cantidad de checkboxes */
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sport label {
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 5px; /* Ajusta la distancia vertical entre el label y el input */
+}
+
+.sport input {
+  margin-bottom: 5px; /* Ajusta la distancia vertical entre el input y el siguiente elemento */
+  column-gap: 0;
+}
+
+form,
+input,
+select,
+textarea {
+  padding: 8px;
+  margin-right: 6rem;
+  margin-left: 6rem;
+  margin-top: 1rem;
+
+  border: none;
+  background: none;
+  outline: 0;
+  border-bottom: 1px solid #99d98c;
+  color: #d9ed92;
+}
+
+legend {
+  font-size: x-large;
+  text-transform: uppercase;
+
+  background-color: #00000099;
+  box-shadow: 0 0 20px 0 rgba(0, 255, 0, 1);
+  border-radius: 6px;
+
+  /* background-color: #00000099;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 #d9ed92; */
+}
+select {
+  background-color: #00000099;
+}
+input::placeholder {
+  color: #52b69a;
+}
+
+.personal-data label {
+  text-align: center;
+}
+
+.gender-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente los elementos */
+
+  text-align: center; /* Centra el texto dentro de las labels */
+}
+
+.gender-container label {
+  text-align: center;
+}
+
+.gender-container input {
+  grid-row: 1;
+}
+
+.nro2 {
+  grid-row: 2;
+}
+.nro3 {
+  grid-row: 3;
+}
+
+.nor4 {
+  padding-top: 10rem;
+  grid-row: 3;
+  padding-left: 3rem;
+  background-color: #00000099;
+  border-radius: 5px;
+}
+
+fieldset {
+  box-shadow: 0 0 20px 0 #34a0a4;
+  /* background: #184e77; */
+  border: none;
+  border-radius: 5px;
+  background-color: #00000099;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
+
+.logo span {
+  color: #d9ed92;
+}
+.nor4 .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.nor4 .btn button {
+  margin: 0 10px; /* Añade espacio entre los botones ajustando el valor según sea necesario */
+  text-transform: uppercase;
+  background-color: #184e77;
+  border-radius: 8px;
+  border: 2px solid #3498db;
+  color: #d9ed92;
+  font-weight: bold;
+  font-size: x-large;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.nor4 .btn button:hover,
+.nor4 .btn button:focus {
+  background-color: rgba(0, 0, 255, 0.2);
+  color: rgba(0, 255, 0, 1);
+}
+
+.nor4 input {
+  margin-right: 1rem;
+}
+.nor4 label {
+  font-size: x-large;
+  color: #d9ed92;
+  font-weight: bold;
+}
+
+.pelotas-container {
+  display: none;
+}
