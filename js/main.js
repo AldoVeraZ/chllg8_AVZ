@@ -36,11 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
   inputElements.forEach(function (element) {
     element.addEventListener("click", function () {
       // Cambia el color de fondo del input o textarea cuando se hace clic
-      element.style.backgroundColor = "#4D6D63"; // Puedes cambiar el color a tu preferencia
+      // element.style.backgroundColor = "#4D6D63"; // Puedes cambiar el color a tu preferencia
 
       const fieldset = element.closest("fieldset");
       if (fieldset) {
-        fieldset.style.backgroundColor = "#A6C1B9";
+        // fieldset.style.backgroundColor = "#A6C1B9";
       }
     });
   });

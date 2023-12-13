@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./style/estilos.css" /> -->
-    <link rel="stylesheet" href="./style/estilos-peliculas.css" />
-    <!-- <link rel="stylesheet" href="./style/estilos-futuro.css" /> -->
+    <link rel="stylesheet" href="./style/estilos.css" />
 
     <title>Document</title>
   </head>
@@ -33,7 +31,7 @@
             <label for="documento">Documento: *</label>
             <input type="text" id="documento" name="documento" required /><br />
 
-            <label for="nacionalidad">Nacionalidad:</label>
+            <label for="nacionalidad">Nacionalidad: *</label>
             <select id="nacionalidad" name="nacionalidad" required>
               <option value="" disabled selected>-- Selecciona --</option>
               <option value="ch">Chile</option>
@@ -43,14 +41,11 @@
               <option value="nw">Norway</option></select
             ><br />
 
-            <label for="textarea" class="pichula"
-              >Contanos un poco de vos...</label
-            >
+            <label for="textarea">Contanos un poco de vos...</label>
             <textarea
               name="textarea"
               id="textarea"
               rows="10"
-              required
               class="block"
             ></textarea
             ><br />
@@ -92,13 +87,12 @@
               type="text"
               id="phone"
               name="phone"
-              required
               placeholder="código de area y número"
             /><br />
 
             <label for="email">Dirección de correo electrónico: *</label>
             <input
-              type="text"
+              type="email"
               id="email"
               name="email"
               required
@@ -171,7 +165,7 @@
         <section class="nor4">
           <!-- <form> -->
           <div class="tyc">
-            <input type="checkbox" class="inpt" id="accept" />
+            <input type="checkbox" class="inpt" id="accept" required />
             <label for="accept" class="lb">Acepto las condiciones *</label
             ><br />
             <input type="checkbox" class="inp2" id="news" />

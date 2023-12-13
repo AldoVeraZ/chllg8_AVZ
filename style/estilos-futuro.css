@@ -93,7 +93,7 @@ textarea {
   margin-top: 1rem;
 
   border: none;
-  background: none;
+  background: none !important;
   outline: 0;
   border-bottom: 1px solid #99d98c;
   color: #d9ed92;
@@ -159,7 +159,7 @@ fieldset {
   /* background: #184e77; */
   border: none;
   border-radius: 5px;
-  background-color: #00000099;
+  background-color: #00000099 !important;
 }
 
 .logo {
